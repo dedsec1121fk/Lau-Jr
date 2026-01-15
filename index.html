@@ -37,12 +37,12 @@
       color: var(--text);
     }
 
-    /* TITLE (5px more up) */
+    /* TITLE (move 15px more up from current) */
     .top{
       position: fixed;
       left: 0;
       right: 0;
-      top: calc(clamp(70px, 14vh, 140px) - 5px);
+      top: calc(clamp(70px, 14vh, 140px) - 20px); /* was -5px, now -20px */
       display: flex;
       justify-content: center;
       padding: 0 14px;
@@ -64,14 +64,15 @@
         0 0 60px rgba(201,166,255,0.25);
     }
 
+    /* Title bigger */
     .title .main{
-      font-size: clamp(44px, 7vw, 74px);
+      font-size: clamp(52px, 8.2vw, 86px); /* was 44-74 */
       letter-spacing: 1px;
       display: block;
     }
 
     .title .sub{
-      font-size: clamp(18px, 3.5vw, 28px);
+      font-size: clamp(20px, 4vw, 32px);
       letter-spacing: 0.6px;
       display: block;
       margin-top: 6px;
@@ -98,7 +99,6 @@
       gap: 10px;
     }
 
-    /* buttons smaller so they don't cover image */
     .btn{
       width: 100%;
       display: block;
@@ -106,9 +106,9 @@
       text-decoration: none;
       color: var(--text);
 
-      padding: 10px 14px;       /* smaller */
+      padding: 10px 14px;
       font-family: "UnifrakturCook", serif;
-      font-size: 22px;          /* smaller */
+      font-size: 22px;
       letter-spacing: 0.5px;
       font-weight: 700;
 
